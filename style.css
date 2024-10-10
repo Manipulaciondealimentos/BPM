@@ -68,7 +68,6 @@ body {
     font-weight: bold;
 }
 
-
 .header p {
     max-width: 600px;
     margin-bottom: 40px;
@@ -209,4 +208,81 @@ body {
 
 .beneficios .box p {
     text-align: left; /* Alinea el texto a la izquierda */
+}
+
+/* Media queries para pantallas más pequeñas */
+@media (max-width: 768px) {
+    .header {
+        height: 400px;
+    }
+
+    .header h2 {
+        font-size: 30px;
+    }
+
+    .header p {
+        font-size: 16px;
+    }
+
+    .navbar a {
+        font-size: 0.9em;
+        padding: 8px;
+    }
+
+    .sau .box {
+        width: 45%;
+    }
+}
+
+@media (max-width: 480px) {
+    .head {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .head .logo {
+        margin: 0;
+    }
+
+    .navbar {
+        flex-direction: column;
+    }
+
+    .navbar a {
+        padding: 10px;
+    }
+
+    .header {
+        height: 300px;
+    }
+
+    .header h2 {
+        font-size: 24px;
+    }
+
+    .header p {
+        font-size: 14px;
+        max-width: 100%;
+    }
+
+    .sau .box {
+        width: 100%;
+    }
+
+    .box-container {
+        flex-direction: column;
+    }
+
+    .box {
+        width: 90%;
+        margin-bottom: 20px;
+    }
+
+    .about, .price, .contact {
+        padding: 20px;
+    }
+
+    .title {
+        font-size: 1.8em;
+    }
 }
